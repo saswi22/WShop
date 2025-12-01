@@ -45,12 +45,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+    'url' => env('DATABASE_URL'),
+    'host' => env('DB_HOST'), // Hapus '127.0.0.1'
+    'port' => env('DB_PORT'), // Hapus '3306'
+    'database' => env('DB_DATABASE'), // Hapus 'forge'
+    'username' => env('DB_USERNAME'), // Hapus 'forge'
+    'password' => env('DB_PASSWORD'), // Hapus ''
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
